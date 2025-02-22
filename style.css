@@ -1,0 +1,195 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    padding: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Home Section */
+.home {
+    background-image: url('https://cdn.pixabay.com/photo/2018/04/30/08/10/business-3362086_1280.jpg');
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white; /* Make text stand out */
+    padding:150px 20px; /* Add padding around the text */
+    text-align: center; /* Center the text */
+
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px;
+    text-align: center;
+    background: #fff;
+    background-color: snow;
+}
+
+/* Highlight background on hover */
+.portfolio-item {
+    position: relative;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.portfolio-item:hover {
+    background-color: #87CEEB;  /* Sky blue color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+/* Highlight background on click */
+.portfolio-item.active {
+    background-color: #87CEEB;  /* Sky blue color on click (same as hover) */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for images and text */
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.portfolio-item h3, .portfolio-item p {
+    margin: 10px 0;
+}
+
+/* Show the project summary when it's active */
+.portfolio-item.active .project-summary {
+    display: block;
+    font-weight: bolder;
+}
+.portfolio-item p {
+    color: #777;
+}
+
+/* Resume Section */
+.resume {
+    text-align: center;
+    padding: 50px;
+    background: #f8f8f8;
+}
+
+.resume button {
+    padding: 5px 20px;
+    font-size: 18px;
+    background-color: burlywood;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.resume button:hover {
+    background-color: #555;
+}
+/* Contact Section Styles */
+.contact {
+    background-color: #f4f7fb;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Style for the contact details */
+.contact-details p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Style for links */
+.contact-details a {
+    text-decoration: none;
+    color: #4e8cce;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-details a:hover {
+    color: #333;
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.3rem;
+    color: #4e8cce;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-link:hover {
+    background-color: #4e8cce;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Add Font Awesome for Icons */
+.social-link i {
+    margin-right: 8px;
+}
+
+/* Hover Effect */
+.contact:hover {
+    transform: translateY(-5px); /* Slightly lift the contact section */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    font-weight: bolder;
+}
